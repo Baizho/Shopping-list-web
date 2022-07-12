@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class="center">Store</h1>
+  <form onsubmit="return addItems(this)" class="MainSize">
+    <div class="Flexit center">
+      <label for="ItemName">ItemName:</label>
+      <input id="ItemName" type="text" value="" placeholder="ItemName" required/>
+      <label for="ItemPrice">ItemPrice:</label>
+      <input id="ItemPrice" type="text" value="" placeholder="ItemPrice" required/>
+      <input class="Dbuttons" type="submit" value="addItem" />
+    </div>
+    <p class="center" id="TotalPriceOut">Total Price: $0</p>
+  </form>
+  
+  <div class="center">
+    <h1>Shopping Cart:</h1>
+    <button class="Dbuttons Specialforbutton1" type="button" onclick="DeleteHistory()">Delete History</button>
+  </div>
+  <ul id="ShopCart"></ul>
+  <script src="script.js"></script>
+</body>
+
+</html>

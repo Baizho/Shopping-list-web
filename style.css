@@ -1,0 +1,35 @@
+.center {
+  text-align:center;
+  justify-content:center;
+}
+.MainSize {
+  font-size:20px;
+}
+.Flexit {
+  display:flex;
+  grid-gap:10px;
+}
+.Specialforbutton1 {
+  padding-top:1px;
+}
+.Dbuttons {
+  background-color:red;
+  color:white;
+}
+.justifybetween {
+  justify-content:space-between;
+}
+li {
+  justify-content: space-between;
+  padding-left:10px;
+  width:600px;
+  border-style:solid;
+  border-block-width:1px;
+  border-left-width:0.2px;
+  border-right-width:0.2px;
+  list-style-type:none;
+}
+
+body {
+  background: lightblue;
+}
