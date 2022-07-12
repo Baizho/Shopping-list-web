@@ -9,6 +9,11 @@
   display:flex;
   grid-gap:10px;
 }
+.Flexcol{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .Specialforbutton1 {
   padding-top:1px;
 }
@@ -22,7 +27,6 @@
 li {
   justify-content: space-between;
   padding-left:10px;
-  width:600px;
   border-style:solid;
   border-block-width:1px;
   border-left-width:0.2px;
