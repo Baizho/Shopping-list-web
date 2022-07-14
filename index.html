@@ -11,21 +11,27 @@
 <body>
   <h1 class="center">Store</h1>
   <form onsubmit="return addItems(this)" class="MainSize">
-    <div class="Flexit center">
-      <label for="ItemName">ItemName:</label>
-      <input id="ItemName" type="text" value="" placeholder="ItemName" required/>
-      <label for="ItemPrice">ItemPrice:</label>
-      <input id="ItemPrice" type="text" value="" placeholder="ItemPrice" required/>
-      <input class="Dbuttons" type="submit" value="addItem" />
+    <div class="Flexrow center">
+      <div class="Flexcol">
+        <label for="ItemName">ItemName:</label>
+        <input id="ItemName" type="text" value="" placeholder="ItemName" required />
+      </div>
+      <div class="Flexcol">
+        <label for="ItemPrice">ItemPrice:</label>
+        <input id="ItemPrice" type="text" value="" placeholder="ItemPrice" required />
+      </div>
+      <div class="Flexcol"><input class="Dbuttons Fully" type="submit" value="addItem" /></div>
+      
+        
     </div>
     <p class="center" id="TotalPriceOut">Total Price: $0</p>
   </form>
-  
+
   <div class="center">
     <h1>Shopping Cart:</h1>
     <button class="Dbuttons Specialforbutton1" type="button" onclick="DeleteHistory()">Delete History</button>
   </div>
-  <ul id="ShopCart" style="justify-content:center" ></ul>
+  <ul id="ShopCart"></ul>
   <script src="script.js"></script>
 </body>
 

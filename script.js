@@ -40,12 +40,12 @@ function refreshUI()
     
     listinfo.appendChild(listtext);
     ParShopCart.appendChild(listinfo);
-    listinfo.classList.add("Flexit");
+    listinfo.classList.add("Flexrow","justifybetween");
     const listdelete=document.createElement("button");
     const deleteinfo=document.createTextNode("Delete");
     
     listdelete.appendChild(deleteinfo);
-    listdelete.classList.add("Dbuttons");
+    listdelete.classList.add("Dbuttons", "Sizebutton");
     listinfo.appendChild(listdelete);
 
     listdelete.addEventListener("click", () => {

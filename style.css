@@ -5,9 +5,22 @@
 .MainSize {
   font-size:20px;
 }
-.Flexit {
+.Fully {
+  width:100%;
+  height:100%;
+}
+#ItemName {
+  border-radius: 6px;
+  padding: 4px 4px;
+}
+#ItemPrice {
+  border-radius: 6px;
+  padding: 4px 4px;
+}
+.Flexrow {
   display:flex;
-  grid-gap:10px;
+  flex-direction:row;
+  gap:10px;
 }
 .Flexcol{
   display:flex;
@@ -17,6 +30,9 @@
 .Specialforbutton1 {
   padding-top:1px;
 }
+.Sizebutton {
+  width:200px;
+}
 .Dbuttons {
   background-color:red;
   color:white;
@@ -24,13 +40,17 @@
 .justifybetween {
   justify-content:space-between;
 }
+#ShopCart {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 li {
-  justify-content: space-between;
-  padding-left:10px;
+  padding: 5px 0px 5px 10px;
+  margin:4px 4px;
+  width:600px;
   border-style:solid;
-  border-block-width:1px;
-  border-left-width:0.2px;
-  border-right-width:0.2px;
+  border-width:1px;
   list-style-type:none;
 }
 
