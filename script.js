@@ -109,12 +109,11 @@ function refreshUI() {
 
       listinfo.appendChild(listtext);
       ParShopCart.appendChild(listinfo);
-      listinfo.classList.add("Flexrow", "justifybetween","black");
+      listinfo.classList.add("Flexrow", "justifybetween");
       const listdelete = document.createElement("button");
       const deleteinfo = document.createTextNode("Delete");
       listdelete.appendChild(deleteinfo);
       listdelete.classList.add("Dbuttons", "Sizebutton", "Rad");
-      listdelete.style.width="auto";
       listinfo.appendChild(listdelete);
 
       listdelete.addEventListener("click", () => {
@@ -129,7 +128,6 @@ function refreshUI() {
     const area=document.createElement("div");
     area.appendChild(thetext);
     area.style.fontSize="30px";
-    area.style.color="black";
     ParShopCart.appendChild(area);
   }
 

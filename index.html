@@ -14,11 +14,11 @@
   <form onsubmit="return addItems(this)" class="MainSize">
     <div class="Flexrow center">
       <div class="Flexcol">
-        <label style="color:black" for="ItemName">ItemName:</label>
+        <label for="ItemName">ItemName:</label>
         <input id="ItemName" type="text" value="" placeholder="ItemName" required />
       </div>
       <div class="Flexcol">
-        <label style="color:black" for="ItemPrice">ItemPrice:</label>
+        <label for="ItemPrice">ItemPrice:</label>
         <input id="ItemPrice" type="text" value="" placeholder="ItemPrice" required />
       </div>
       <div class="Flexcol"><input class="Dbuttons Fully" type="submit" value="addItem" /></div>
@@ -31,16 +31,15 @@
   <div class="center">
     <h1>Shopping Cart</h1>
     <form>
-      <i style="color:black" class="fa fa-search"></i>
+      <i class="fa fa-search"></i>
       <input list="searchoptions" type="text" oninput="Changesearch(this)"></input>
       <datalist id="searchoptions"></datalist>
     </form>
-    <br>
     <button class="Dbuttons Specialforbutton1" type="button" onclick="DeleteHistory()">Delete History</button>
   </div>
   <br>
   <form onsubmit="return Applysort(this)" style="font-size:25px" class="center">
-    <label style="color:black" for="picksort">Choose sort option:</label>
+    <label for="picksort">Choose sort option:</label>
     <select id="picksort">
       <option value="StoL">Small -> Large</option>
       <option value="LtoS">Large -> Small</option>

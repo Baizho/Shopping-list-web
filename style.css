@@ -13,13 +13,6 @@
   border-radius: 6px;
   padding: 4px 4px;
 }
-h1 {
-  color:black;
-}
-p {
-  color:black;
-}
-
 #ItemPrice {
   border-radius: 6px;
   padding: 4px 4px;
@@ -75,10 +68,6 @@ li {
   border-width:1px;
   border-radius:10px;
   list-style-type:none;
-}
-
-.black {
-  color:black;
 }
 
 body {
