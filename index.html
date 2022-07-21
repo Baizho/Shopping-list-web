@@ -6,10 +6,36 @@
   <meta name="viewport" content="width=device-width">
   <title>Shopping list</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <div style="position:absolute">
+    <i id="baricon" style="font-size:30px;" class="fa fa-bars"></i>
+    <span style="font-size:25px; padding-left:10px;"><strong>More Games and Projects</strong></span>
+  </div>
+  <div id="showproj">
+    <i style="font-size:30px"class="fa fa-bars"></i>
+    <span style="padding-left:10px; font-size:25px"><strong>More Games and Projects</strong></span>
+    <h1 style="font-size:25px;margin-top:5px" class="center">Baizho's Games and Projects</h1>
+    <div class="Flexrow center" style="gap:50px;">
+      <div class="Flexcol" style="height:100px">
+        <label for="shop">Shopping cart Project</label>
+        <a href="http://baizho.github.io/Shopping-list-web"><img  style="height:80px;" name="shop" src="./shop cart.png" /></a>
+      </div>
+      <div class="Flexcol">
+        <label for="shop">To-do list Project</label>
+        <a href="http://baizho.github.io/To_Do-list-web"><img  style="height:80px;" name="shop" src="./pencilpaper - Copy.jpg" /></a>
+      </div>
+      <div class="Flexcol">
+        <label for="shop">Tic_Tac_Toe Game/Project</label>
+        <a href="http://baizho.github.io/Tic_Tac_Toe-web"><img  style="height:80px;" name="shop" src="./ticboard - Copy.jpg" /></a>
+      </div>
+    </div>
+
+  </div>
+  <br><br>
   <h1 class="center">Store</h1>
   <form onsubmit="return addItems(this)" class="MainSize">
     <div class="Flexrow center">
@@ -35,18 +61,19 @@
       <input list="searchoptions" type="text" oninput="Changesearch(this)"></input>
       <datalist id="searchoptions"></datalist>
     </form>
+    <br>
     <button class="Dbuttons Specialforbutton1" type="button" onclick="DeleteHistory()">Delete History</button>
   </div>
   <br>
   <form onsubmit="return Applysort(this)" style="font-size:25px" class="center">
-    <label for="picksort">Choose sort option:</label>
+    <label style="font-size:20px" for="picksort">Choose sort option:</label>
     <select id="picksort">
       <option value="StoL">Small -> Large</option>
       <option value="LtoS">Large -> Small</option>
       <option value="LtoO">Latest -> Oldest</option>
       <option value="OtoL">Oldest -> Latest</option>
     </select>
-    <input style="font-size:20px; background-color:blue; color:white" type="submit" value="Apply option"></input>
+    <input style="font-size:15px; background-color:blue; color:white" type="submit" value="Apply option"></input>
   </form>
   <ul id="ShopCart"></ul>
   <script src="script.js"></script>

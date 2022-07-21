@@ -5,6 +5,20 @@ let cart = [];
 let thesortoption = "StoL";
 let searchitem = "";
 
+$("#baricon").mouseenter(() => {
+  const parshowproj=document.getElementById("showproj");
+  if(parshowproj.style.opacity==="1") {
+    parshowproj.style.display="none";
+  }
+   else {
+      parshowproj.style.display="block";
+    }
+});
+$("#showproj").mouseleave(() => {
+  const parshowproj=document.getElementById("showproj");
+  parshowproj.style.display="none";
+});
+
 
 class Item {
   constructor(name, price, seconds, minute, hour, day, month, year) {
