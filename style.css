@@ -55,12 +55,12 @@
   flex-direction:column;
   align-items:center;
 }
-#baricon:hover {
+#bariconsec:hover {
   transform: rotate(90deg);
 }
-#baricon {
+#bariconsec {
   transition:transform 1s;
-  position:relative;
+
 }
 #showproj {
   position:absolute;

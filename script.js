@@ -7,7 +7,7 @@ let searchitem = "";
 
 $("#baricon").mouseenter(() => {
   const parshowproj=document.getElementById("showproj");
-  if(parshowproj.style.opacity==="1") {
+  if(parshowproj.style.display==="block") {
     parshowproj.style.display="none";
   }
    else {
