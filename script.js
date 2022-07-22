@@ -35,7 +35,7 @@ class Item {
 
 function refreshStorage() {
   let storageprice = localStorage.getItem("TotalPrice");
-  let storagecart = localStorage.getItem("cart");
+  let storagecart = localStorage.getItem("shoplistcart");
   if (storageprice !== null) TotalPrice = parseInt(storageprice);
   else TotalPrice = 0;
   if (storagecart !== null) {
@@ -111,7 +111,7 @@ function refreshUI() {
   if (thesortoption === "LtoO") { sortLtoO(); }
   if (thesortoption === "OtoL") { sortOtoL(); }
   localStorage.setItem("TotalPrice", TotalPrice);
-  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("shoplistcart", JSON.stringify(cart));
   Totalpricedoc.innerText = `Total Price: $${TotalPrice}`;
   ParShopCart.innerHTML = "";
   let cnt=0;
@@ -182,7 +182,7 @@ function Applysort(form) {
 }
 
 function DeleteHistory() {
-  localStorage.removeItem("cart");
+  localStorage.removeItem("shoplistcart");
   localStorage.removeItem("TotalPrice");
   refreshStorage();
   refreshUI();
