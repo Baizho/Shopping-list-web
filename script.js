@@ -36,7 +36,7 @@ class Item {
 function refreshStorage() {
   let storageprice = localStorage.getItem("TotalPrice");
   let storagecart = localStorage.getItem("shoplistcart");
-  if (storageprice !== null) TotalPrice = parseInt(storageprice);
+  if (storageprice !== null) TotalPrice = parseFloat(storageprice);
   else TotalPrice = 0;
   if (storagecart !== null) {
     cart = JSON.parse(storagecart).map((item) => {
@@ -164,7 +164,7 @@ function Changesearch(inp) {
 
 function addItems(form) {
   const Name = form.ItemName.value;
-  const Price = parseInt(form.ItemPrice.value);
+  const Price = parseFloat(form.ItemPrice.value);
   TotalPrice += (Price);
   let date = new Date(); let day = date.getDate(); let month = date.getMonth() + 1; let year = date.getFullYear(); let hour = date.getHours(); let minute = date.getMinutes(); let seconds=date.getSeconds()
   const item = new Item(Name, Price, seconds, minute, hour, day, month, year);
