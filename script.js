@@ -5,19 +5,6 @@ let cart = [];
 let thesortoption = "StoL";
 let searchitem = "";
 
-$("#baricon").mouseenter(() => {
-  const parshowproj=document.getElementById("showproj");
-  if(parshowproj.style.display==="block") {
-    parshowproj.style.display="none";
-  }
-   else {
-      parshowproj.style.display="block";
-    }
-});
-$("#showproj").mouseleave(() => {
-  const parshowproj=document.getElementById("showproj");
-  parshowproj.style.display="none";
-});
 
 
 class Item {
